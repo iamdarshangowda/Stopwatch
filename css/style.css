@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  background: #202020;
+  color: white;
+}
+
+.wrapper {
+  max-width: 800px;
+  height: fit-content;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 5em;
+}
+
+p {
+  font-size: 12em;
+}
+
+.container {
+  max-width: 700px;
+  margin: 25px auto;
+}
+
+.container > button {
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 180px;
+  font-size: 2em;
+  margin: 10px;
+  color: #3c4043;
+  padding: 15px 5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+footer {
+  width: 150px;
+  margin: 50px auto;
+}
+
+footer > a {
+  font-family: inherit;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: fit-content;
+    height: min-content;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  h1 {
+    width: 70%;
+    font-size: 2em;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 4em;
+  }
+  .container {
+    width: 70%;
+    margin: 25px auto;
+  }
+}
